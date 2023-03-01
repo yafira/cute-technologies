@@ -1,7 +1,7 @@
 const { Client } = require('@notionhq/client')
 
-const dbID = process.env.NOTION_BLOG_DATABASE_ID
-const notionToken = process.env.NOTION_ACCESS_TOKEN
+const dbID = process.env.NEXT_PUBLIC_DATABASE_ID
+const notionToken = process.env.NEXT_PUBLIC_NOTION_TOKEN
 
 const notion = new Client({
 	auth: notionToken,
@@ -18,8 +18,8 @@ export const getAllPublished = async () => {
 		},
 		sorts: [
 			{
-				property: 'Date',
-				direction: 'descending',
+				property: 'Resource',
+				direction: 'ascending',
 			},
 		],
 	})
@@ -43,7 +43,7 @@ const getPageMetaData = (post) => {
 	return {
 		id: post.id,
 		title: post.properties.Resource.title[0].plain_text,
-		url: post.properties.Url.url,
+		url: post.properties.Link.url,
 		tags: getTags(post.properties.Tags.multi_select),
 		date: getToday(post.properties.Date.created_time),
 	}
