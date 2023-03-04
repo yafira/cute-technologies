@@ -1,24 +1,24 @@
 .logo {
-	display: inline-block;
 	width: 50px;
 	height: 50px;
 	margin: 20px 50px;
-	border-radius: 20%;
-	background-color: rgb(152, 226, 243);
 }
 
 .Header {
 	font-family: 'Space Mono', monospace;
-	background-color: rgb(152, 226, 243);
 	padding: 20px;
 }
 
+.logo,
+.Header {
+	background-color: rgb(243, 250, 234);
+}
 .Header h1 {
 	margin-top: 10px;
 	margin-bottom: 0px;
 	font-size: 50px;
-	color: rgb(56, 44, 220);
-	text-decoration: rgb(56, 44, 220) overline;
+	color: rgb(0, 0, 0);
+	text-decoration: rgb(158, 151, 247) overline;
 }
 
 .Header p {
