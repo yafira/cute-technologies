@@ -1,4 +1,4 @@
-import Logo from '../assets/bow.png'
+import Logo from '../assets/logo.png'
 import Image from 'next/image'
 import styles from '../styles/Header.module.css'
 

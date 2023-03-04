@@ -6,19 +6,49 @@
 
 .container {
 	text-align: center;
+	border: rgb(56, 44, 220) 2px solid;
 }
 
-.columns {
-	column-count: auto;
-	column-width: 300px;
-	column-gap: inherit;
-	padding: 50px;
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
 }
 
 .tab {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;
 	background: rgb(142, 210, 231);
+}
+
+.tab > ul {
+	list-style-type: none;
+	margin: 0px;
+	width: 50%;
+	padding: 5px 50px;
+}
+
+.tab > ul li {
+	text-align: left;
+	margin: 20px 0px;
+}
+
+.tab > ul:nth-child(1) li {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+}
+
+.tab > ul:nth-child(3) li {
+	text-align: center;
+}
+
+.tab > ul:nth-child(3) li h5,
+.tab > ul:nth-child(3) li h4 {
+	margin: auto;
 }
 
 .p {
@@ -56,6 +86,7 @@
 	font-weight: normal;
 	background-color: rgb(16, 82, 157);
 	border: rgb(92, 79, 202) 1px solid;
+	border-radius: 5%;
 	display: inline;
 }
 

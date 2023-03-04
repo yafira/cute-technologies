@@ -15,20 +15,24 @@ export default function Home({ posts }) {
 					//console.log(post.tags)
 					return (
 						<section key={index} className={styles.tab}>
-							<div>
-								<h2>
-									<Link href={`/posts/${post.resource}`}></Link>
-								</h2>
-							</div>
-							<div>
-								<h3>{post.title}</h3>
-								<h4>{post.url}</h4>
-								{post.tags.map((tag, key) => (
-									<Link key={key} href={`/tags/${tag}`}>
-										<h5>{tag}</h5>
-									</Link>
-								))}
-							</div>
+							<ul>
+								<li>
+									<div>
+										<h2>
+											<Link href={`/posts/${post.resource}`}></Link>
+										</h2>
+									</div>
+									<div>
+										<h3>{post.title}</h3>
+										<h4>{post.url}</h4>
+										{post.tags.map((tag, key) => (
+											<Link key={key} href={`/tags/${tag}`}>
+												<h5>{tag}</h5>
+											</Link>
+										))}
+									</div>
+								</li>
+							</ul>
 						</section>
 					)
 				})}
