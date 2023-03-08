@@ -4,9 +4,8 @@ import { getAllPublished, getPostByResource } from '../../lib/notion.js'
 const Post = ({ post }) => (
 	<section>
 		<h2>{post.metadata.title}</h2>
-		<span>{post.metadata.url}</span>
-		<p>{post.metadata.tags.join(', ')}</p>
 		<span>{post.metadata.date}</span>
+		<p>{post.metadata.tags.join(', ')}</p>
 		<ReactMarkdown>{post.markdown}</ReactMarkdown>
 	</section>
 )

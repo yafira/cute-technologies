@@ -43,7 +43,8 @@ const getPageMetaData = (post) => {
 	return {
 		id: post.id,
 		title: post.properties.Resource.title[0].plain_text,
-		url: post.properties.Link.url,
+		image: post.properties.Image.url,
+		// description: post.properties.Description.rich_text[0].plain_text,
 		tags: getTags(post.properties.Tags.multi_select),
 		date: getToday(post.properties.Date.created_time),
 	}

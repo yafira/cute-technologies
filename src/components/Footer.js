@@ -6,9 +6,9 @@ export default function Footer() {
 	return (
 		<div className={styles.Footer}>
 			<h3>
-				© 2023 Built and designed{' '}
+				© 2023 Built and designed with{' '}
 				<FontAwesomeIcon icon={faHeart} style={{ color: '#B2A4D4' }} /> by
-				Yafira
+				electrocute
 			</h3>
 		</div>
 	)

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { getAllPublished, getPostsByTag } from '../lib/notion'
 import Header from '../components/Header'
@@ -14,25 +15,33 @@ export default function Home({ posts }) {
 				{posts.map((post, index) => {
 					//console.log(post.tags)
 					return (
-						<section key={index} className={styles.tab}>
-							<ul>
-								<li>
-									<div>
-										<h2>
-											<Link href={`/posts/${post.resource}`}></Link>
-										</h2>
-									</div>
-									<div>
-										<h3>{post.title}</h3>
-										<h4>{post.url}</h4>
-										{post.tags.map((tag, key) => (
-											<Link key={key} href={`/tags/${tag}`}>
-												<h5>{tag}</h5>
-											</Link>
-										))}
-									</div>
-								</li>
-							</ul>
+						<section key={index} className={styles.card}>
+							<div>
+								<h2>
+									<Link href={`/posts/${post.resource}`}></Link>
+								</h2>
+							</div>
+							<div>
+								<div className={styles.imgWrap}>
+									<Image
+										unoptimized
+										src={post.image}
+										responsive
+										width={260}
+										height={270}
+										alt='resource'
+									/>
+								</div>
+
+								<h3>{post.title}</h3>
+								<h4>{post.rating}</h4>
+								<p>{post.description}</p>
+								{post.tags.map((tag, key) => (
+									<Link key={key} href={`/tags/${tag}`}>
+										<h5>{tag}</h5>
+									</Link>
+								))}
+							</div>
 						</section>
 					)
 				})}
