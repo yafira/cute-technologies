@@ -18,8 +18,8 @@ export const getAllPublished = async () => {
 		},
 		sorts: [
 			{
-				property: 'Resource',
-				direction: 'ascending',
+				property: 'Date',
+				direction: 'descending',
 			},
 		],
 	})

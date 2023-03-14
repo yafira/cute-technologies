@@ -27,14 +27,13 @@ export default function Home({ posts }) {
 										unoptimized
 										src={post.image}
 										responsive
-										width={260}
-										height={270}
+										width={290}
+										height={250}
 										alt='resource'
 									/>
 								</div>
 
 								<h3>{post.title}</h3>
-								<h4>{post.rating}</h4>
 								<p>{post.description}</p>
 								{post.tags.map((tag, key) => (
 									<Link key={key} href={`/tags/${tag}`}>

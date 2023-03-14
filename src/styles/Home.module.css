@@ -51,7 +51,7 @@
 .card h3 {
 	user-select: text;
 	font-family: 'Space Mono', monospace;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	color: rgb(94, 115, 237);
 	line-height: 1.2;
 }
@@ -60,24 +60,15 @@
 	background-color: #a7cfee;
 }
 
-.card h4 {
-	font-family: 'Space Mono', monospace;
-	font-size: 0.75rem;
-	padding: 5px;
-	color: rgb(0, 0, 0);
-	line-height: 1.5;
-}
-
 .card h5 {
 	font-family: 'Space Mono', monospace;
 	color: rgb(255, 255, 255);
 	padding: 3px;
 	margin: 2px;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	font-weight: normal;
 	background-color: rgb(94, 125, 247);
 	border: rgb(92, 79, 202) 1px solid;
-	border-radius: 5%;
 	display: inline;
 }
 
