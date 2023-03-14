@@ -27,9 +27,10 @@ export default function Home({ posts }) {
 										unoptimized
 										src={post.image}
 										responsive
-										width={290}
-										height={250}
+										width={260}
+										height={270}
 										alt='resource'
+										npm
 									/>
 								</div>
 
