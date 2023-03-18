@@ -26,6 +26,11 @@
 	display: inline-block;
 }
 
+.card:hover {
+	transition: background-color 1s ease-out 100ms;
+	background-color: #fbe9f3;
+}
+
 .card Image {
 	display: block;
 	width: 100%;
@@ -40,6 +45,10 @@
 	/* border: 3px solid red; */
 	height: auto;
 	position: relative;
+}
+
+.card a {
+	text-decoration: none;
 }
 
 .card p {
@@ -72,9 +81,6 @@
 	display: inline;
 }
 
-.card a {
-	text-decoration: none;
-}
 .card h5:hover {
 	font-weight: bold;
 	color: #f8b9f8;
