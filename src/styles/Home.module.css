@@ -2,6 +2,7 @@
 
 .main {
 	background-color: rgb(243, 250, 234);
+	user-select: none;
 }
 
 .container {
