@@ -39,8 +39,19 @@
 	margin-bottom: 5px;
 }
 
-.imgWrap img {
+.imgWrap {
 	max-width: 100%;
+	position: relative !important;
+}
+
+.tagImages {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.imgTag {
+	max-width: 20rem;
+	height: auto !important;
 	position: relative !important;
 }
 
@@ -52,11 +63,13 @@
 	font-size: 0.8rem;
 	color: #000;
 	line-height: 1.3;
+	margin: 1rem;
+	/* text-align: left; */
 }
 
 .card h3 {
 	user-select: text;
-	font-family: 'Space Mono', monospace;
+	/* font-family: 'Space Mono', monospace; */
 	font-size: 1.3rem;
 	color: rgb(94, 115, 237);
 	line-height: 1.2;
@@ -90,6 +103,10 @@
 
 .card:hover {
 	border: 3px solid #7272f4;
+}
+
+.tags {
+	margin: 2rem 0 1rem;
 }
 
 @media screen and (max-width: 750px) {

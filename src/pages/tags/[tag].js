@@ -1,5 +1,7 @@
 import Image from 'next/image'
-import { getPostsByTag } from '../../lib/notion'
+import { getPostsByTag } from 'src/lib/notion'
+
+import styles from 'src/styles/Home.module.css'
 
 export async function getServerSideProps({ params }) {
 	const res = await getPostsByTag(params.tag)
@@ -14,33 +16,24 @@ export async function getServerSideProps({ params }) {
 	}
 }
 
-const Tag = ({ posts }) => {
-	// console.log(posts)
+const Tag = ({ posts }) => (
+	<div className={styles.tagImages}>
+		{posts.map((post, id) => {
+			if (!post.properties.Image.url) return <></>
 
-	return (
-		<div>
-			<span>
-				{posts.map((post, id) => {
-					if (!post.properties.Image.url) return <></>
-
-					return (
-						<span key={id}>
-							{
-								<Image
-									unoptimized
-									responsive
-									width={260}
-									height={270}
-									src={post.properties.Image.url}
-									alt='resource'
-								/>
-							}
-						</span>
-					)
-				})}
-			</span>
-		</div>
-	)
-}
+			return (
+				<Image
+					key={id}
+					unoptimized
+					responsive
+					fill
+					src={post.properties.Image.url}
+					alt='resource'
+					className={styles.imgTag}
+				/>
+			)
+		})}
+	</div>
+)
 
 export default Tag
