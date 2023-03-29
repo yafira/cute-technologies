@@ -5,6 +5,8 @@ export async function getServerSideProps({ params }) {
 	const res = await getPostsByTag(params.tag)
 	const posts = res.results
 
+	console.log({ res, posts })
+
 	return {
 		props: {
 			posts,
@@ -19,6 +21,8 @@ const Tag = ({ posts }) => {
 		<div>
 			<span>
 				{posts.map((post, id) => {
+					if (!post.properties.Image.url) return <></>
+
 					return (
 						<span key={id}>
 							{

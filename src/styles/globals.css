@@ -4,6 +4,7 @@ body {
 	overflow-x: hidden;
 	background: rgb(255, 255, 241);
 	color: black;
+	/* cursor: url('../assets/cursor.png'), pointer; */
 }
 
 body {

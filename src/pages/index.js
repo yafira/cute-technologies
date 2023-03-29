@@ -14,27 +14,25 @@ export default function Home({ posts }) {
 			<main className={`${styles.columns} ${styles.main}`}>
 				{posts.map((post, index) => {
 					//console.log(post.tags)
+					console.log(post)
 					return (
 						<section key={index} className={styles.card}>
-							<div>
-								<h2>
-									<Link href={`/posts/${post.resource}`}></Link>
-								</h2>
-							</div>
 							<div>
 								<div className={styles.imgWrap}>
 									<Image
 										unoptimized
 										src={post.image}
 										responsive
-										width={260}
-										height={270}
+										fill
 										alt='resource'
 										npm
 									/>
 								</div>
-
-								<h3>{post.title}</h3>
+								<div>
+									<a target='_blank' href={post.link}>
+										<h3>{post.title}</h3>
+									</a>
+								</div>
 								<p>{post.description}</p>
 								{post.tags.map((tag, key) => (
 									<Link key={key} href={`/tags/${tag}`}>

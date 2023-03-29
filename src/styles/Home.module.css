@@ -35,17 +35,13 @@
 .card Image {
 	display: block;
 	width: 100%;
-	height: auto;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
 }
 
-.imgWrap {
-	align-items: center;
-	max-width: 400px;
-	/* border: 3px solid red; */
-	height: auto;
-	position: relative;
+.imgWrap img {
+	max-width: 100%;
+	position: relative !important;
 }
 
 .card a {
