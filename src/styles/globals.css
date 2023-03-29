@@ -1,3 +1,7 @@
+* {
+	cursor: url('../assets/cursor.png'), pointer;
+}
+
 html,
 body {
 	max-width: 100vw;
