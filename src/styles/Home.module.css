@@ -29,7 +29,7 @@
 
 .card:hover {
 	transition: background-color 1s ease-out 100ms;
-	background-color: #f2e9fb;
+	background-color: #f1e9f9;
 }
 
 .card Image {
@@ -67,7 +67,7 @@
 }
 
 .card h3::selection {
-	background-color: #a7cfee;
+	background-color: rgb(202, 230, 247);
 }
 
 .card h5 {
@@ -75,7 +75,7 @@
 	color: rgb(255, 255, 255);
 	padding: 3px;
 	margin: 2px;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	font-weight: normal;
 	background-color: rgb(94, 125, 247);
 	border: rgb(92, 79, 202) 1px solid;

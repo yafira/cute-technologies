@@ -9,6 +9,10 @@
 	padding: 20px;
 }
 
+.Header h1:hover {
+	color: rgb(233, 206, 225);
+}
+
 .logo,
 .Header {
 	background-color: rgb(243, 250, 234);

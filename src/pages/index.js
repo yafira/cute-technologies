@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ posts }) {
-	if (!posts) return <h1>No resources available</h1>
+	if (!posts) return <h1>No resources available.</h1>
 
 	return (
 		<div className={styles.container}>
