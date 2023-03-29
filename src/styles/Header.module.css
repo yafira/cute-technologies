@@ -29,3 +29,9 @@
 	margin-top: 15px;
 	color: cornflowerblue;
 }
+
+.logo,
+.Header p,
+.Header h1 {
+	user-select: none;
+}

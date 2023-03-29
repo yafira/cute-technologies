@@ -67,7 +67,7 @@
 }
 
 .card h3::selection {
-	background-color: rgb(202, 230, 247);
+	background-color: transparent;
 }
 
 .card h5 {
