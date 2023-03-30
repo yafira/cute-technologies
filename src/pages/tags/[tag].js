@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getPostsByTag } from 'src/lib/notion'
 import Header from 'src/components/Header'
+import Footer from '@/components/Footer'
 import styles from 'src/styles/Home.module.css'
 
 export async function getServerSideProps({ params }) {
@@ -40,6 +41,7 @@ const Tag = ({ posts }) => (
 				})}
 			</main>
 		</div>
+		<Footer />
 	</div>
 )
 
