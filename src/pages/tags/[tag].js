@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { getPostsByTag } from 'src/lib/notion'
-
+import Header from 'src/components/Header'
 import styles from 'src/styles/Home.module.css'
 
 export async function getServerSideProps({ params }) {
@@ -17,22 +17,29 @@ export async function getServerSideProps({ params }) {
 }
 
 const Tag = ({ posts }) => (
-	<div className={styles.tagImages}>
-		{posts.map((post, id) => {
-			if (!post.properties.Image.url) return <></>
+	<div className={styles.container}>
+		<Header />
+		<div className={styles.tagImages}>
+			<main className={`${styles.columns} ${styles.main}`}>
+				{posts.map((post, id) => {
+					if (!post.properties.Image.url) return <></>
 
-			return (
-				<Image
-					key={id}
-					unoptimized
-					responsive
-					fill
-					src={post.properties.Image.url}
-					alt='resource'
-					className={styles.imgTag}
-				/>
-			)
-		})}
+					return (
+						<section key={id} className={styles.card}>
+							<Image
+								key={id}
+								unoptimized
+								responsive
+								fill
+								src={post.properties.Image.url}
+								alt='resource'
+								className={styles.imgTag}
+							/>
+						</section>
+					)
+				})}
+			</main>
+		</div>
 	</div>
 )
 
