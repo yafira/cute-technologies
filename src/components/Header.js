@@ -8,8 +8,8 @@ export default function Header() {
 			<Image className={styles.logo} src={Logo} alt='logo' />
 			<h1>cute technologies</h1>
 			<p>
-				A collection of cybertwee tools and resources to make your computing
-				.env cuter.
+				A collection of cybertwee functional tools and resources to make your
+				computing .env cuter.
 			</p>
 		</div>
 	)
