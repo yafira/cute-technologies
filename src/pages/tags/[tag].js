@@ -1,7 +1,7 @@
 import { getPostsByTag } from 'src/lib/notion'
 import Header from 'src/components/Header'
 import Footer from '@/components/Footer'
-import PostList from '@/components/PostList'
+import PostListTags from '@/components/PostListTags'
 import styles from 'src/styles/Home.module.css'
 
 export async function getServerSideProps({ params }) {
@@ -18,7 +18,7 @@ export async function getServerSideProps({ params }) {
 const Tag = ({ posts }) => (
 	<div className={styles.container}>
 		<Header />
-		<PostList posts={posts} tagPage />
+		<PostListTags posts={posts} />
 		<Footer />
 	</div>
 )
