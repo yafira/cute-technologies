@@ -9,13 +9,13 @@
 	padding: 20px;
 }
 
-.Header h1:hover {
-	color: rgb(233, 206, 225);
-}
-
 .logo,
 .Header {
 	background-color: rgb(243, 250, 234);
+}
+
+.Header a {
+	text-decoration: none;
 }
 .Header h1 {
 	margin-top: 10px;
@@ -23,6 +23,10 @@
 	font-size: 50px;
 	color: rgb(0, 0, 0);
 	text-decoration: rgb(158, 151, 247) overline;
+}
+
+.Header h1:hover {
+	color: rgb(233, 206, 225);
 }
 
 .Header p {
