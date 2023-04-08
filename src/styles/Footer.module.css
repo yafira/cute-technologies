@@ -9,4 +9,15 @@
 	margin: 0;
 	text-align: center;
 	user-select: none;
+	font-weight: 200;
+}
+
+.Footer a {
+	font-weight: 300;
+	text-decoration: none;
+	color: rgb(235, 132, 228);
+}
+
+.Footer a:hover {
+	color: rgb(249, 179, 244);
 }
