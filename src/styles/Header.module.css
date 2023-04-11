@@ -46,4 +46,8 @@
 		font-size: 30px;
 		text-decoration: none;
 	}
+	.Header p {
+		font-size: 16px;
+		text-decoration: none;
+	}
 }
