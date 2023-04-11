@@ -38,7 +38,12 @@
 .logo,
 .Header p,
 .Header h1 {
-	font-size: 20px;
-	text-decoration: none;
 	user-select: none;
+}
+
+@media screen and (max-width: 750px) {
+	.Header h1 {
+		font-size: 30px;
+		text-decoration: none;
+	}
 }

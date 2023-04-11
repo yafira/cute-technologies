@@ -72,7 +72,7 @@
 
 .card h3 {
 	user-select: text;
-	/* font-family: 'Space Mono', monospace; */
+	font-family: 'Poppins', sans-serif;
 	font-size: 1.3rem;
 	color: rgb(94, 115, 237);
 	line-height: 1.2;
