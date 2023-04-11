@@ -110,11 +110,15 @@
 
 .tags {
 	margin: 2rem 0 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 @media screen and (max-width: 750px) {
 	.columns {
 		column-gap: 0px;
+		padding: 0;
 	}
 	.columns card {
 		width: 100%;
