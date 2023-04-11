@@ -3,6 +3,8 @@
 .main {
 	background-color: rgb(243, 250, 234);
 	user-select: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .container {
