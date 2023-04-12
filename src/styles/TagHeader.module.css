@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Space+Mono:wght@400;700&display=swap');
+
 .TagHeader {
 	font-family: 'Space Mono', monospace;
-	background-color: rgb(241, 26, 151);
+	background-color: rgb(243, 250, 234);
 	border: solid 5px blue;
 	padding: 50px;
 }
@@ -8,7 +10,7 @@
 .TagHeader h1 {
 	user-select: none;
 	font-size: 50px;
-	color: rgb(0, 0, 0);
+	color: black;
 }
 
 @media screen and (max-width: 750px) {

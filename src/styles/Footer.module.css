@@ -13,11 +13,11 @@
 }
 
 .Footer a {
-	font-weight: 300;
+	font-weight: bold;
 	text-decoration: none;
-	color: rgb(235, 132, 228);
+	color: rgb(196, 132, 235);
 }
 
 .Footer a:hover {
-	color: rgb(249, 179, 244);
+	color: rgb(215, 175, 240);
 }
