@@ -23,7 +23,6 @@
 	margin-bottom: 0px;
 	font-size: 50px;
 	color: rgb(0, 0, 0);
-	text-decoration: rgb(158, 151, 247) overline;
 }
 
 .Header h1:hover {
@@ -33,6 +32,7 @@
 .Header p {
 	margin-top: 15px;
 	color: cornflowerblue;
+	text-decoration: rgb(158, 151, 247) overline;
 }
 
 .logo,
