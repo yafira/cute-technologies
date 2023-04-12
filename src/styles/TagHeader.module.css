@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Space+Mono:wght@400;700&display=swap');
-
 .TagHeader {
 	font-family: 'Space Mono', monospace;
 	background-color: rgb(243, 250, 234);
-	border: solid 5px blue;
-	padding: 50px;
+	padding: 20px;
 }
 
 .TagHeader h1 {
 	user-select: none;
-	font-size: 50px;
-	color: black;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 40px;
+	color: rgb(189, 188, 240);
+}
+
+.TagHeader a {
+	text-decoration: none;
+}
+
+.TagHeader h1:hover {
+	color: rgb(233, 206, 225);
 }
 
 @media screen and (max-width: 750px) {

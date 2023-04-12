@@ -1,16 +1,11 @@
 import styles from '../styles/TagHeader.module.css'
+import Link from 'next/link'
 
-const TagHeader = ({ tags, tagPage }) => (
+const TagHeader = ({ tag }) => (
 	<div className={styles.TagHeader}>
-		{tags?.map((tag, key) => {
-			const tagText = tagPage ? tag.name : tag
-
-			return (
-				<h1 key={key} href={`/tags/${tagText}`}>
-					{tagText}
-				</h1>
-			)
-		})}
+		<Link href='/'>
+			<h1>˚✧{tag}✧˚</h1>
+		</Link>
 	</div>
 )
 
