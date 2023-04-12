@@ -71,8 +71,8 @@
 }
 
 .card h3 {
-	user-select: text;
 	font-family: 'Poppins', sans-serif;
+	user-select: text;
 	font-size: 1.3rem;
 	color: rgb(94, 115, 237);
 	line-height: 1.2;
