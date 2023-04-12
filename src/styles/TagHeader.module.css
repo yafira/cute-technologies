@@ -9,16 +9,16 @@
 	margin-top: 10px;
 	margin-bottom: 0px;
 	font-size: 40px;
-	color: rgb(189, 188, 240);
+	color: rgb(224, 126, 237);
 }
 
 .TagHeader a {
 	text-decoration: none;
 }
 
-.TagHeader h1:hover {
+/* .TagHeader h1:hover {
 	color: rgb(233, 206, 225);
-}
+} */
 
 @media screen and (max-width: 750px) {
 	.TagHeader h1 {
