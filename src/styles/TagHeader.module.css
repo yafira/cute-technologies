@@ -1,0 +1,19 @@
+.TagHeader {
+	font-family: 'Space Mono', monospace;
+	background-color: rgb(241, 26, 151);
+	border: solid 5px blue;
+	padding: 50px;
+}
+
+.TagHeader h1 {
+	user-select: none;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 750px) {
+	.TagHeader h1 {
+		font-size: 30px;
+		text-decoration: none;
+	}
+}
