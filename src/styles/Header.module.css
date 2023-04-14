@@ -41,6 +41,13 @@
 	user-select: none;
 }
 
+.logo:hover {
+	padding: 10px;
+	border-radius: 50px;
+	background-color: rgb(204, 201, 254);
+	border: 1px solid rgb(158, 151, 247);
+}
+
 @media screen and (max-width: 750px) {
 	.Header h1 {
 		font-size: 30px;
