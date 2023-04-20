@@ -1,12 +1,10 @@
 # Cute Technologies
-## a blog/guide with resources to 'cutiefy' your computing environment using Notion as a CMS.
+### a blog/guide with resources to 'cutiefy' your computing environment using Notion as a CMS.
 
 ##### ⭒ Built using Next.js and <a href='https://developers.notion.com/'> Notion API </a>
 
 ---
 
-
-<br>
 
 <h3><b>Tech Stack:</b></h3>
 
@@ -26,4 +24,4 @@
 
 ---
 
-Check out the app [here!](https://cute-technologies.vercel.app/)
+Check it out [here!](https://cute-technologies.vercel.app/)
