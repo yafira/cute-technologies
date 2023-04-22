@@ -3,6 +3,7 @@ import Header from 'src/components/Header'
 import Footer from 'src/components/Footer'
 import PostListIndex from '@/components/PostListIndex'
 import styles from 'src/styles/Home.module.css'
+import Head from 'next/head'
 
 export const getStaticProps = async () => {
 	const data = await getAllPublished()
@@ -19,6 +20,9 @@ export const getStaticProps = async () => {
 export default function Home({ posts }) {
 	return (
 		<div className={styles.container}>
+			<Head>
+				<title>cute technologies</title>
+			</Head>
 			<Header />
 			<PostListIndex posts={posts} />
 			<Footer />
