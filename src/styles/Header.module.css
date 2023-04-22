@@ -50,12 +50,18 @@
 }
 
 @media screen and (max-width: 750px) {
+	.logo {
+		width: 45px;
+		height: 45px;
+		margin: 20px 50px;
+	}
 	.Header h1 {
-		font-size: 30px;
+		font-size: 25px;
 		text-decoration: none;
 	}
 	.Header p {
-		font-size: 16px;
+		font-size: 13px;
+		padding: 5px;
 		text-decoration: none;
 	}
 }
