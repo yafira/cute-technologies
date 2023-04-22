@@ -1,5 +1,5 @@
 # Cute Technologies
-### a blog/guide with resources to 'cutiefy' your computing environment using Notion as a CMS.
+### a blog/guide with resources to 'cutiefy' your computing environment using Next.js and Notion as a CMS.
 
 ##### ⭒ Built using Next.js and <a href='https://developers.notion.com/'> Notion API </a>
 
