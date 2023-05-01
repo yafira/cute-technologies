@@ -24,4 +24,4 @@
 
 ---
 
-Check it out [here!](https://cute-technologies.vercel.app/)
+Check it out [here!](https://cutetech.tools/)
