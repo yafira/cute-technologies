@@ -4,15 +4,17 @@ import styles from '../styles/Home.module.css'
 
 const PostItem = ({ imgURL, title, link, description, tags, tagPage }) => (
 	<section className={styles.card}>
-		<Image
-			unoptimized
-			src={imgURL}
-			responsive
-			fill
-			alt='resource'
-			npm
-			className={styles.imgWrap}
-		/>
+		<a target='_blank' href={link}>
+			<Image
+				unoptimized
+				src={imgURL}
+				responsive
+				fill
+				alt='resource'
+				npm
+				className={styles.imgWrap}
+			/>
+		</a>
 
 		<a target='_blank' href={link}>
 			<h3>{title}</h3>
