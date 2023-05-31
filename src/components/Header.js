@@ -13,7 +13,7 @@ export default function Header() {
 
 			<p>
 				A collection of cybertwee functional tools and resources to make your
-				computing .env cuter and amplifying productivity.
+				computing .env cuter while amplifying productivity.
 			</p>
 		</div>
 	)
