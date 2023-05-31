@@ -65,3 +65,9 @@
 		text-decoration: none;
 	}
 }
+
+@media screen and (max-width: 1240px) {
+	.Header p {
+		text-decoration: none;
+	}
+}
