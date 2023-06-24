@@ -9,13 +9,6 @@
 	text-align: center;
 }
 
-.columns {
-	column-count: auto;
-	column-width: 300px;
-	column-gap: inherit;
-	padding: 50px;
-}
-
 .card {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;
@@ -43,6 +36,7 @@
 
 .imgWrap {
 	max-width: 100%;
+	height: auto !important;
 	position: relative !important;
 }
 
@@ -108,14 +102,4 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-@media screen and (max-width: 750px) {
-	.columns {
-		column-gap: 0px;
-		padding: 0;
-	}
-	.columns card {
-		width: 100%;
-	}
 }

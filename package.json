@@ -24,6 +24,7 @@
     "notion-to-md": "^2.5.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-markdown": "^8.0.5"
+    "react-markdown": "^8.0.5",
+    "react-responsive-masonry": "^2.1.7"
   }
 }
