@@ -13,11 +13,12 @@
 .Footer a {
 	font-weight: bold;
 	text-decoration: none;
-	color: rgb(224, 126, 237);
+	color: #b1a2f1;
 }
 
 .Footer a:hover {
-	color: rgb(215, 175, 240);
+	color: #5e7df7;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 750px) {
