@@ -12,7 +12,7 @@ export default function Header() {
 			</Link>
 
 			<p>
-				A collection of cybertwee functional tools and resources to make your
+				A collection of functional cybertwee tools and resources to make your
 				computing .env cuter while amplifying productivity.
 			</p>
 		</div>
