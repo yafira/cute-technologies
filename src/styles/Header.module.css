@@ -7,6 +7,7 @@
 .Header {
 	font-family: 'Space Mono', monospace;
 	padding: 20px;
+	text-align: center;
 }
 
 .headerContainer {
