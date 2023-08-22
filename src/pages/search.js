@@ -17,11 +17,12 @@ const SearchPage = ({ searchResults }) => {
 
 	return (
 		<div>
-			<div className={styles.searchHeaderContainer}>
-				<Header />
-			</div>
+			<Header />
+
 			<SearchBar />
-			<h1>Search Results for {query}</h1>
+			<div className={styles.container}>
+				<h2>Search Results for ✧ {query} ✧</h2>
+			</div>
 			{filteredResults.length === 0 ? (
 				<p>No results found.</p>
 			) : (

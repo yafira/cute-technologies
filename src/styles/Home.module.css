@@ -9,6 +9,11 @@
 	text-align: center;
 }
 
+.container h2 {
+	color: #7f72f4;
+	font-family: 'Poppins', sans-serif;
+}
+
 .card {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;
