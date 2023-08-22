@@ -9,6 +9,12 @@
 	padding: 20px;
 }
 
+.headerContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .logo,
 .Header {
 	background-color: rgb(243, 250, 234);

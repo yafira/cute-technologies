@@ -2,6 +2,7 @@ import Logo from '../assets/logo.png'
 import Image from 'next/image'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
+import '../components/SearchBar'
 
 export default function Header() {
 	return (

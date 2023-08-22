@@ -1,6 +1,7 @@
 import { getAllPublished, getPostsByTag } from 'src/lib/notion'
 import Header from 'src/components/Header'
 import Footer from 'src/components/Footer'
+import SearchBar from '@/components/SearchBar'
 import PostListIndex from '@/components/PostListIndex'
 import styles from 'src/styles/Home.module.css'
 import Head from 'next/head'
@@ -24,6 +25,7 @@ export default function Home({ posts }) {
 				<title>cute technologies</title>
 			</Head>
 			<Header />
+			<SearchBar />
 			<PostListIndex posts={posts} />
 			<Footer />
 		</div>
