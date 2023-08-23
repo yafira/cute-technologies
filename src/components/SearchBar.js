@@ -7,12 +7,18 @@ const SearchBar = () => {
 	const router = useRouter()
 
 	const handleSearch = () => {
-		router.push(`/search?query=${encodeURIComponent(searchQuery)}`)
+		if (searchQuery.trim() !== '') {
+			router.push(`/search?query=${encodeURIComponent(searchQuery)}`)
+		}
 	}
 
 	const handleKeyPress = (e) => {
 		if (e.key === 'Enter') {
-			handleSearch()
+			if (searchQuery.trim() !== '') {
+				handleSearch()
+			} else {
+				e.preventDefault() // Prevent page navigation if search query is empty
+			}
 		}
 	}
 

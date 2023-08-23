@@ -29,18 +29,26 @@ const SearchPage = ({ searchResults }) => {
 		result.title.toLowerCase().includes(query.toLowerCase())
 	)
 
+	const handleSearch = (newQuery) => {
+		if (newQuery.trim() !== '') {
+			router.push(`/search?query=${newQuery}`)
+		}
+	}
+
 	return (
 		<div>
 			<Header />
 
-			<SearchBar />
+			<SearchBar onSearch={handleSearch} />
 			<div className={styles.container}>
 				<h2>Search Results for ✧ {query} ✧</h2>
 			</div>
 			{isLoading ? (
 				<p>Loading...</p>
-			) : query && query.trim() !== '' ? (
-				filteredResults.length === 0 ? (
+			) : (
+				query &&
+				query.trim() !== '' &&
+				(filteredResults.length === 0 ? (
 					<p>No results found.</p>
 				) : (
 					<div className={styles.main}>
@@ -69,9 +77,7 @@ const SearchPage = ({ searchResults }) => {
 							</ResponsiveMasonry>
 						</main>
 					</div>
-				)
-			) : (
-				<p>Enter a search query to see results.</p>
+				))
 			)}
 		</div>
 	)
