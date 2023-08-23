@@ -14,6 +14,11 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+.container h3 {
+	color: #ec86ca;
+	font-family: 'Poppins', sans-serif;
+}
+
 .card {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 200;

@@ -44,7 +44,9 @@ const SearchPage = ({ searchResults }) => {
 				<h2>Search Results for ✧ {query} ✧</h2>
 			</div>
 			{isLoading ? (
-				<p>Loading...</p>
+				<div className={styles.container}>
+					<h3>Loading...</h3>
+				</div>
 			) : (
 				query &&
 				query.trim() !== '' &&
